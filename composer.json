@@ -1,0 +1,33 @@
+{
+    "name": "considbrs-webdev/utilities",
+    "description": "Helper/utility library for WordPress and common plugins.",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1.11",
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Adam ALexandersson",
+            "email": "adam.alexandersson@consid.se"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Consid\\": "src/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "scripts": {
+        "lint": [
+            "phpcs --ignore=vendor,tests --extensions=php --standard=PSR12 ."
+        ],
+        "lint:fix": [
+            "phpcbf --ignore=vendor,tests --extensions=php --standard=PSR12 ."
+        ]
+    }
+}
