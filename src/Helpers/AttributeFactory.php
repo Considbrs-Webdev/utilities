@@ -76,6 +76,11 @@ class AttributeFactory
         $this->join();
     }
 
+    public function toArray()
+    {
+        return $this->attributes;
+    }
+
     public function get()
     {
         return $this->attributes_string;
